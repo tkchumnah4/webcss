@@ -1,0 +1,36 @@
+[1mdiff --git a/cascade4.html b/cascade4.html[m
+[1mindex 1480a03..78baf24 100644[m
+[1m--- a/cascade4.html[m
+[1m+++ b/cascade4.html[m
+[36m@@ -9,8 +9,16 @@[m
+             h1{[m
+                 font-size: 35px;[m
+                 color:indianred;[m
+[32m+[m[32m                font-family:sans-serif;[m
+[32m+[m
+[32m+[m[32m            }[m
+[32m+[m[32m            li{[m
+[32m+[m[32m               /* list-style-type:square; */[m
+[32m+[m[32m                /* list-style-type:decimal-leading-zero; */[m
+[32m+[m[32m                list-style-image:url("images1/break1.png");[m
+[32m+[m[32m                list-style-position:inside;[m
+             }[m
+[31m-            [m
+[32m+[m
+         </style>[m
+     </head>[m
+ [m
+[36m@@ -23,11 +31,11 @@[m
+                 <header>[m
+                     <h3>Example 1</h3>[m
+                 </header>[m
+[31m-                <ul>[m
+[32m+[m[32m                <ol>[m
+                     <li>eggs</li>[m
+                     <li>milk</li>[m
+                     <li>break</li>[m
+[31m-                </ul>[m
+[32m+[m[32m                </ol>[m
+             </article>[m
+         </main>[m
+     </body>[m
