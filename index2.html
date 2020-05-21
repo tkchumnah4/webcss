@@ -1,44 +1,84 @@
 <!DOCTYPE html>
 <!-- HTML5 doctype-->
 <html lang="en">
-    <head>
 
-    </head>
+<head>
 
-    <body>
-        <!--The header can be a starting point for the document or individual sections-->
-        <header>
-            <h1>Index2</h1>
-            <!--The nav refers to navigation. It could contain a set navigation links, to different of a page-->
-            <nav>
-                <ol>
-                    <li><a href="#section">section</a></li>
-                    <li><a href="#article">article</a></li>
-                    <li><a href="#aside">aside</a></li>
-                    <li><a href="#footer">footer</a></li>
-                    <li><a href="#"></a></li><li>
-                        <a href="#"></a></li>
-                </ol>
-            </nav>
-        </header>
-        <main>
-            <!--The section refers to sections in a document of plants could contain several sections-->
-            <section id="section"></section>
-            <hr>
+</head>
 
-            <!--The article refers to independent content, it should make sense  all by itself.-->
-            <article id="article"></article>
-            <hr>
+<body>
+    <!--The header can be a starting point for the document or individual sections-->
+    <header>
+        <h1>Index2</h1>
+        <!--The nav refers to navigation. It could contain a set navigation links, to different of a page-->
+        <nav>
+            <ol>
+                <li><a href="#section">section</a></li>
+                <li><a href="#article">article</a></li>
+                <li><a href="#aside">aside</a></li>
+                <li><a href="#footer">footer</a></li>
+                <li><a href="#"></a></li>
+                <li>
+                    <a href="#"></a></li>
+            </ol>
+        </nav>
+    </header>
+    <main>
+        <!--The section refers to sections in a document of plants could contain several sections-->
+        <section id="section">
+            <p>Click here to view more <a href="#">cat photos</a>.</p>
 
-            <!--The aside refers to content that is apart fom the main content.-->
-            <aside id="aside"></aside>
-            <hr>
+            <a href="#"><img src="https://bit.ly/fcc-relaxing-cat" alt="A cute orange cat lying on its back."></a>
 
-            <!--The footer contains typical information such as authoring, copyrights and contact information.-->
-            <footer id="footer"></footer>
-            <hr>
+            <p>Things cats love:</p>
+            <ul>
+                <li>cat nip</li>
+                <li>laser pointers</li>
+                <li>lasagna</li>
+            </ul>
+            <p>Top 3 things cats hate:</p>
+            <ol>
+                <li>flea treatment</li>
+                <li>thunder</li>
+                <li>other cats</li>
+            </ol>
+            <form action="/submit-cat-photo">
+                <input type="text" placeholder="cat photo URL" required><br>
+                <input type="text" placeholder="car album URl" required>
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+        <hr>
 
-        </main>
-    </body>
+        <!--The article refers to independent content, it should make sense  all by itself.-->
+        <article id="article">
+            <p>Choose the type of donut(s) you would like then select
+                the "purchase donuts" button.</p>
+
+            <form action="http://example.com/donut" method="post">
+                <p>
+                    <input type="radio" name="flavor" id="choc" value="chocolate" />
+                    <label for="choc">Chocolate</label><br />
+                    <input type="radio" name="flavor" id="cream" value="cream" />
+                    <label for="cream">Cream Filled</label><br />
+                    <input type="radio" name="flavor" id="honey" value="honey" />
+                    <label for="honey">Honey Glazed</label><br />
+                    <input type="submit" value="Purchase Donuts" />
+                </p>
+            </form>
+            <label><input type="radio" name="indoor-outdoor">Indoor</label>
+        </article>
+        <hr>
+
+        <!--The aside refers to content that is apart fom the main content.-->
+        <aside id="aside"></aside>
+        <hr>
+
+        <!--The footer contains typical information such as authoring, copyrights and contact information.-->
+        <footer id="footer"></footer>
+        <hr>
+
+    </main>
+</body>
 
 </html>
