@@ -4,19 +4,54 @@
 <head>
     <meta charset="utf-8">
     <title>Dog Photo App</title>
+    <link href='https://fonts.googleapis.com/css?family=Lobster Two' rel='stylesheet'>
+    <style>
+        h2 {
+            font-family: Lobster Two, monospace;
+
+        }
+
+        .red-text {
+            color: red;
+        }
+
+        p {
+            font-size: 16px;
+            font-family: monospace;
+
+        }
+
+        .silver-background {
+            background-color: silver;
+        }
+
+        .smaller-image {
+            width: 300px;
+        }
+
+        .thick-blue-border {
+            border-color: blue;
+            border-width: 10px;
+            border-style: solid;
+            border-radius: 50%;
+        }
+        #dog-photo-form{
+            background-color:mediumpurple;
+        }
+    </style>
 </head>
 
 <body>
     <main>
         <article>
-            <h2>DogPhotoApp</h2>
-            <p>Click here to view more <a href="#">dog photo</a></p>
+            <h2 class="red-text">DogPhotoApp</h2>
+            <p class="red-text">Click here to view more <a href="#">dog photo</a></p>
             <figure>
-                <a href="#"><img src="images/dog1.jpg" alt="a white dog laying on the grass"></a>
+                <a href="#"><img src="images/dog1.jpg" alt="a white dog laying on the grass" class="smaller-image thick-blue-border"></a>
                 <figcaption>Fig1. - A white dog</figcaption>
             </figure>
 
-            <div>
+            <div class=" silver-background">
                 <p>Things dog Love:</p>
                 <ol>
                     <li>Running</li>
@@ -33,7 +68,7 @@
                 </ul>
             </div>
 
-            <form action="/submitphoto">
+            <form action="/submitphoto" id="dog-photo-form">
                 <label for="indoor"><input id="indoor" type="radio" name="in-out" value="indoor">Indoor</label>
                 <label for="outdoor"><input id="outdoor" type="radio" name="in-out" value="outdoor">Outdoor</label><br>
                 <label for="loving"><input id="loving" type="checkbox" name="persona" value="loving">Loving</label>
