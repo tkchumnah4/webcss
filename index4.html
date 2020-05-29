@@ -6,13 +6,16 @@
     <title>Dog Photo App</title>
     <link href='https://fonts.googleapis.com/css?family=Lobster Two' rel='stylesheet'>
     <style>
+        :root{
+            --samepara-color:red;
+        }
         h2 {
             font-family: Lobster Two, monospace;
 
         }
 
-        .red-text {
-            color: red;
+        .text-color {
+            color:var(--samepara-color,blue);
         }
 
         p {
@@ -44,22 +47,22 @@
 <body>
     <main>
         <article>
-            <h2 class="red-text">DogPhotoApp</h2>
-            <p class="red-text">Click here to view more <a href="#">dog photo</a></p>
+            <h2 class="text-color">DogPhotoApp</h2>
+            <p class="text-color">Click here to view more <a href="#">dog photo</a></p>
             <figure>
                 <a href="#"><img src="images/dog1.jpg" alt="a white dog laying on the grass" class="smaller-image thick-blue-border"></a>
                 <figcaption>Fig1. - A white dog</figcaption>
             </figure>
 
             <div class=" silver-background">
-                <p>Things dog Love:</p>
+                <p class="text-color">Things dog Love:</p>
                 <ol>
                     <li>Running</li>
                     <li>Playing</li>
                     <li>Pampered</li>
                 </ol>
 
-                <p>Things dog Hate:</p>
+                <p class="text-color">Things dog Hate:</p>
                 <ul>
                     <li>Taking bath</li>
                     <li>Loud noise</li>
