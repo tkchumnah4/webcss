@@ -7,7 +7,7 @@
     <title>Basic CSS 6</title>
     <style>
         :root{
-            --same-color:red;
+            --same-color:blue;
         }
         /*contains css contents */
         <link href="https://fonts.googleapis.com/css?family=Lobster"rel="stylesheet"type="text/css">.red-text {
@@ -22,7 +22,7 @@
         p {
             font-size: 16px;
             font-family: monospace;
-            color:saddlebrown;
+            color:var(--same-color,violet)
         }
 
         .thick-green-border {
@@ -53,6 +53,9 @@
         }
         ol{
             color:seagreen;
+        }
+        li{
+            color:yellow;
         }
         
     </style>
