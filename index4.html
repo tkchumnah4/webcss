@@ -6,16 +6,17 @@
     <title>Dog Photo App</title>
     <link href='https://fonts.googleapis.com/css?family=Lobster Two' rel='stylesheet'>
     <style>
-        :root{
-            --samepara-color:red;
+        :root {
+            --samepara-color: red;
         }
+
         h2 {
             font-family: Lobster Two, monospace;
 
         }
 
         .text-color {
-            color:var(--samepara-color,blue);
+            color: var(--samepara-color, blue);
         }
 
         p {
@@ -30,6 +31,7 @@
 
         .smaller-image {
             width: 300px;
+            height:300px;
         }
 
         .thick-blue-border {
@@ -38,11 +40,26 @@
             border-style: solid;
             border-radius: 50%;
         }
-        #dog-photo-form{
-            background-color:mediumpurple;
+
+        #dog-photo-form {
+            background-color: mediumpurple;
         }
-        [type='checkbox']{
+
+        [type='checkbox'] {
             margin: 50px 20px 20px 50px;
+        }
+
+        #anime : hover {}
+
+        img:hover {
+            animation-name:changewidth;
+            animation-duration:500ms;
+        }
+        @keyframes changewidth{
+            100%{
+                width:400px;
+                height:400px;
+            }
         }
     </style>
 </head>
@@ -53,7 +70,8 @@
             <h2 class="text-color">DogPhotoApp</h2>
             <p class="text-color">Click here to view more <a href="#">dog photo</a></p>
             <figure>
-                <a href="#"><img src="images/dog1.jpg" alt="a white dog laying on the grass" class="smaller-image thick-blue-border"></a>
+                <a href="#"><img src="images/dog1.jpg" alt="a white dog laying on the grass"
+                        class="smaller-image thick-blue-border" id="anime1"></a>
                 <figcaption>Fig1. - A white dog</figcaption>
             </figure>
 
