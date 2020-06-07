@@ -5,6 +5,21 @@
     <meta charset="utf-8">
     <title>Exploring CSS</title>
     <style>
+        .back1{
+            position:fixed;
+            padding:0;
+            margin:0;
+            top:0;
+            left:0;
+            width:100%;
+            height:100%;
+            background:linear-gradient(
+                red,
+                blue,
+                yellow,
+                green
+            );
+        }
         .ball {
             width: 70px;
             height: 70px;
@@ -17,17 +32,21 @@
                     #ffcccc);
                     animation-name:fade;
                     animation-duration:3s;
+                    animation-iteration-count:infinite;
+                    z-index:1;
 
         }
         @keyframes fade{
             50%{
-                left:60%
+                left:60%;
+                opacity:0.01;
             }
         }
     </style>
 
     <head>
         <div class="ball"></div>
+        <div class="back1"></div>
     </head>
 
 </head>
