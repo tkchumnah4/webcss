@@ -1,10 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Exploring CSS</title>
+    <style>
+        .ball {
+            width: 70px;
+            height: 70px;
+            margin: 50px auto;
+            position: fixed;
+            left: 20%;
+            border-radius: 50%;
+            background: linear-gradient(35deg,
+                    #ccffff,
+                    #ffcccc);
+                    animation-name:fade;
+                    animation-duration:3s;
+
+        }
+        @keyframes fade{
+            50%{
+                left:60%
+            }
+        }
+    </style>
+
     <head>
-        <meta charset="utf-8">
-        <title>Exploring CSS</title>
-        <style>
-            
-        </style>
+        <div class="ball"></div>
     </head>
+
+</head>
+
 </html>
