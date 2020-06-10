@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Dropping balls</title>
+        <style>
+            .balls{
+                border-radius:50%;
+                position:fixed;
+                width:30px;
+                height:30px;
+                top:60%;
+                animation-name:jump;
+                animation-duration:2s;
+                animation-iteration-count:infinite;
+
+            }
+            #red{
+                background:red;
+                left:5%;
+                animation-timing-function:cubic-bezier(0.31,0.42,0.43,1.59);
+
+            }
+            #blue{
+                background:blue;
+                left:10%;
+                animation-timing-function:cubic-bezier(0.311,0.4441,0.444,1.6);
+            }
+            #green{
+                background:green;
+                left:15%;
+                animation-timing-function:cubic-bezier(0.311, 0.441, 0.444, 1.649)
+            }
+            @keyframes jump{
+                50%{
+                    top:10%;
+                }
+            }
+
+        </style>
+    </head>
+    <body>
+        <div class="balls" id="red"></div>
+        <div class="balls" id="blue"></div>
+        <div class="balls" id="green"></div> 
+
+    </body>
+</html>
