@@ -27,14 +27,14 @@
 
         .d5 {
             background: palegreen;
-            grid-area:footer;
+            grid-area:1/2/3/4;
 
         }
 
         .container {
             font-size: 40px;
             width: 400px;
-            height: 300px;
+            min-height: 300px;
             background: lightgray;
             display: grid;
             grid-template-columns: 1fr 1fr 1fr;
@@ -42,7 +42,7 @@
             grid-gap: 10px;
             grid-template-areas:
                 "header header header header"
-                ". content content "
+                "advert content content "
                 "footer footer footer";
         }
     </style>
