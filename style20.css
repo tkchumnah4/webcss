@@ -1,12 +1,12 @@
 body{
-    background-color:lightblue;
+    background-color:lightblue; /*set the whole page backgorund color to lightblue */
 }
 h1{
-    color:white;
-    text-align:center;
+    color:white; /*sets the text colors of h1 tags to white */
+    text-align:center; /* sets the text to the center of the page for all h1 tags */
 }
 #para1{
-    color:red;
-    text-align:center;
+    color:red; /*sets the color of text to red for id class para1 */
+    text-align:center;/*sets the text to the center of the page for id class para1 */
 
 }
