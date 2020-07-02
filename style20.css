@@ -4,9 +4,15 @@ body{
 h1{
     color:white; /*sets the text colors of h1 tags to white */
     text-align:center; /* sets the text to the center of the page for all h1 tags */
+border: 3px solid blue;
 }
 #para1{
     color:red; /*sets the color of text to red for id class para1 */
     text-align:center;/*sets the text to the center of the page for id class para1 */
-
+border: 1px solid black;
+}
+p{
+    color:green;
+    font-size:30px;
+    border: 2px solid yellow;
 }
